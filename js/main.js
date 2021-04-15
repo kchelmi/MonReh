@@ -103,3 +103,22 @@ function checkfadeIn() {
     }
   })
 }
+
+
+const zoomIns = document.querySelectorAll('.zoomIn')
+
+window.addEventListener('scroll', checkzoomIn);
+
+checkzoomIn()
+
+function checkzoomIn() {
+  const triggerzoomIn = window.innerHeight / 5 * 4;
+
+  zoomIns.forEach(zoomIn => {
+    const zoomInTop = zoomIn.getBoundingClientRect().top
+
+    if (zoomInTop < triggerzoomIn) {
+      zoomIn.classList.add('animate-zoomIn')
+    }
+  })
+}
