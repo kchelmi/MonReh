@@ -252,6 +252,12 @@ header {
   z-index: 3;
 }
 
+@media (min-width: 375px) {
+  .headline {
+    top: 80%;
+  }
+}
+
 .headline h1 {
   font-size: 3rem;
 }
@@ -281,7 +287,6 @@ header {
 
 .hero::after {
   content: "";
-  background: black;
   width: 100%;
   height: 100%;
   position: absolute;
