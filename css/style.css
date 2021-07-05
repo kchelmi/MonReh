@@ -106,6 +106,10 @@
   text-align: center;
 }
 
+.overview__text {
+  text-align: left;
+}
+
 .offer-info {
   color: #eee;
   display: flex;
@@ -129,7 +133,7 @@
 }
 
 .overview {
-  background-color: #318CFF;
+  background-color: #318cff;
   position: absolute;
   left: 0;
   bottom: 0;
