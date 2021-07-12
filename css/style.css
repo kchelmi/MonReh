@@ -153,6 +153,7 @@
 
 .offer_wrapper:hover .overview {
   transform: translateY(0);
+  height: 100%;
 }
 
 /* Offer End */
@@ -164,7 +165,7 @@
 
 body {
   font-family: serif;
-  background-color: #c3ddf4;
+  background-color: #A8C8FB;
 }
 
 .slider {
@@ -416,9 +417,17 @@ footer {
     z-index: 4;
     background-color: #fff;
   }
+  .headline {
+    top: 90%;
+  }
+  .headline__number__contact {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
   .hero img {
     width: 100%;
-    height: 100%;
+    height: 120%;
     object-fit: contain;
   }
   .nav-links li {
