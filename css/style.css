@@ -257,7 +257,7 @@ header {
   left: 5%;
   font-size: 4rem;
   transform: translate(-20%, -70%);
-  color: #fff;
+  color: #000;
   z-index: 3;
 }
 
@@ -284,12 +284,12 @@ header {
 
 .headline__number__contact p {
   font-size: 1rem;
-  color: white;
+  color: black;
 }
 
 .headline__number__contact a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.5rem;
 }
 
