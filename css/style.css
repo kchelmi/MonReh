@@ -165,7 +165,8 @@
 
 body {
   font-family: serif;
-  background-color: #A8C8FB;
+  /* background-color: #A8C8FB; */
+  background-color: #d9d9d9;
 }
 
 .slider {
@@ -219,7 +220,7 @@ header {
 
 .nav-links li a::after {
   position: absolute;
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   left: -100%;
@@ -310,7 +311,7 @@ header {
 }
 
 .hero::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
