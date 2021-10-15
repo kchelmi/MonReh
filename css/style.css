@@ -275,6 +275,13 @@ header {
   font-size: 2rem;
 }
 
+@media (max-width: 600px) {
+  .headline p,
+  .headline h1 {
+    color: white;
+  }
+}
+
 .headline__number__contact {
   position: absolute;
   right: 2%;
