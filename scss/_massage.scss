@@ -1,0 +1,36 @@
+.sectionMassage {
+
+  h2 {
+    text-align: center;
+    padding: 5rem 0;
+    font-size: 2rem;
+  }
+
+  .sectionMassage-Wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 2.5rem;
+    line-height: 1.5;
+
+    img {
+      height: 500px;
+      width: auto;
+      border-radius: 15px;
+    }
+
+    .sectionMassage-info>* {
+      padding: 10px;
+    }
+
+    strong {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+}
