@@ -1,6 +1,10 @@
 .sectionMe .sectionMe-Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 0 8rem 0;
@@ -10,11 +14,13 @@
   height: 500px;
   width: auto;
   border-radius: 10px;
+  -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
 .sectionMe .sectionMe-Wrapper img:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .sectionMe .sectionMe-Wrapper .sectionMe-Wrapper-info {
@@ -31,8 +37,12 @@
 }
 
 .sectionMe .sectionMe-Wrapper-certificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 0 auto;
 }
 
@@ -49,8 +59,12 @@
 }
 
 .sectionMassage .sectionMassage-Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1600px;
   margin: 0 auto;
   gap: 2.5rem;
@@ -87,11 +101,16 @@
 }
 
 .offerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 89vw;
   margin: 0 auto;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .offer_wrapper {
@@ -99,7 +118,8 @@
   height: 420px;
   margin: 1rem;
   background-color: #333;
-  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
   border-radius: 25px;
@@ -112,10 +132,19 @@
 
 .offer-info {
   color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .offer-info > * {
@@ -139,8 +168,12 @@
   bottom: 0;
   right: 0;
   height: auto;
-  transform: translateY(101%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .overview > * {
@@ -152,15 +185,59 @@
 }
 
 .offer_wrapper:hover .overview {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   height: 100%;
 }
 
 /* Offer End */
+.eu-grant_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eu-grant img {
+  padding: 1rem 0;
+  height: 200px;
+}
+
+.eu-grant-txt {
+  width: 60vw;
+  text-align: center;
+  line-height: 200%;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .eu-grant_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0.5rem;
+  }
+  .eu-grant img {
+    width: auto;
+  }
+  .eu-grant-txt {
+    line-height: 150%;
+    font-size: 1rem;
+    width: 80vw;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -180,11 +257,15 @@ body {
 
 /* Navigation Menu Start */
 nav {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 10% auto auto 10%;
+  -ms-grid-columns: 10% auto auto 10%;
+      grid-template-columns: 10% auto auto 10%;
   min-height: 10vh;
   color: #000;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header {
@@ -192,14 +273,20 @@ header {
 }
 
 #logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
   font-size: 2rem;
   cursor: pointer;
 }
 
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-size: 1.5rem;
 }
 
@@ -211,6 +298,7 @@ header {
   color: #000;
   text-decoration: none;
   letter-spacing: 1px;
+  -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
   display: block;
   position: relative;
@@ -227,6 +315,7 @@ header {
   height: 2px;
   color: #808080;
   background-color: #000;
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
@@ -245,6 +334,7 @@ header {
   height: 3px;
   background-color: #000;
   margin: 5px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -253,7 +343,8 @@ header {
   top: 85%;
   left: 5%;
   font-size: 4rem;
-  transform: translate(-20%, -70%);
+  -webkit-transform: translate(-20%, -70%);
+          transform: translate(-20%, -70%);
   color: black;
   z-index: 3;
 }
@@ -282,7 +373,8 @@ header {
   position: absolute;
   right: 2%;
   bottom: -25%;
-  transform: translate(-20%, -70%);
+  -webkit-transform: translate(-20%, -70%);
+          transform: translate(-20%, -70%);
 }
 
 .headline__number__contact p {
@@ -297,10 +389,16 @@ header {
 }
 
 .hero_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 80vh;
-  justify-content: center;
-  align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .hero {
@@ -312,7 +410,8 @@ header {
 .hero img {
   width: 100%;
   height: 130%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero::after {
@@ -346,17 +445,26 @@ header {
 }
 
 .contactWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 5rem;
 }
 
 .contact_2 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   width: 400px;
-  justify-content: center;
-  align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   gap: 1.5rem;
   font-size: 1.5rem;
   line-height: 80px;
@@ -368,6 +476,7 @@ header {
   height: 80px;
   border-radius: 50%;
   border: 2px solid #fff;
+  -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 
@@ -377,7 +486,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .icon-circle:hover {
@@ -400,9 +510,15 @@ header {
 
 /* Contact End */
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 5vh;
 }
 
@@ -413,13 +529,26 @@ footer {
     right: 0;
     height: 82vh;
     top: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
     width: 100%;
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
     z-index: 4;
     background-color: #fff;
   }
@@ -434,7 +563,8 @@ footer {
   .hero img {
     width: 100%;
     height: 120%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .nav-links li {
     opacity: 0;
@@ -442,14 +572,19 @@ footer {
   }
   #logo {
     font-size: 1.5rem;
-    grid-row-start: 1;
-    grid-column-start: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
   }
   .burger {
     display: block;
-    justify-self: self-start;
-    grid-row-start: 1;
-    grid-column-start: 2;
+    -ms-grid-column-align: self-start;
+        justify-self: self-start;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     width: 10px;
   }
   .headline h1 {
@@ -466,7 +601,10 @@ footer {
     overflow-x: hidden;
   }
   .sectionMe-Wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sectionMe-Wrapper-info {
     padding: 0 0.5rem !important;
@@ -476,14 +614,20 @@ footer {
     text-align: center;
   }
   .sectionMe-Wrapper-certificate {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 95vw !important;
   }
   .sectionMassage h2 {
     padding: 3rem 0;
   }
   .sectionMassage-Wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1rem 0.5rem !important;
   }
   .sectionMassage-info > * {
@@ -528,7 +672,10 @@ footer {
     font-size: 1.5rem;
   }
   .contactWrap {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 2rem;
   }
   .contact_2 {
@@ -549,22 +696,39 @@ footer {
 }
 
 .nav-active {
-  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 .toggleBurger .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggleBurger .line2 {
@@ -572,7 +736,8 @@ footer {
 }
 
 .toggleBurger .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Animation fadeIn  */
@@ -581,9 +746,21 @@ footer {
 }
 
 .animate-fadeIn {
+  -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
@@ -596,18 +773,32 @@ footer {
 }
 
 .animate-zoomIn {
+  -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-@keyframes zoomIn {
+@-webkit-keyframes zoomIn {
   from {
     opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
   to {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
