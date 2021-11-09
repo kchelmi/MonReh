@@ -1,20 +1,20 @@
 .eu-grant_main {
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  //   height: 25vh;
-  //   width: 95vw;
+  padding: 3rem 0 0 0;
 }
 
 .eu-grant img {
-  padding: 1rem 0;
+  padding: 1rem 4rem;
   height: 200px;
 }
 
 .eu-grant-txt {
   width: 60vw;
   text-align: center;
-  line-height: 200%;
+  line-height: 150%;
   padding: 1rem 1rem;
   margin: 0 auto;
 }
